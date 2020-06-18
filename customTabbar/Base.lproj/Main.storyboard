@@ -7,33 +7,86 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--People-->
         <scene sceneID="gD5-NB-SW1">
             <objects>
                 <viewController id="Uf7-yr-hq1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Hr-og-XoU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPy-6b-RTT">
+                                <rect key="frame" x="172" y="778" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="DVY-lF-DPa"/>
+                                    <constraint firstAttribute="height" constant="70" id="pxB-1v-eS4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="plus.circle" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sPy-6b-RTT" firstAttribute="centerX" secondItem="3Hr-og-XoU" secondAttribute="centerX" id="3fJ-DP-NZy"/>
+                            <constraint firstItem="Hka-dn-9VO" firstAttribute="bottom" secondItem="sPy-6b-RTT" secondAttribute="bottom" constant="-35" id="4oC-HO-K4k"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hka-dn-9VO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="kdw-CO-LGZ"/>
+                    <tabBarItem key="tabBarItem" title="People" image="person.circle.fill" catalog="system" selectedImage="person.circle.fill" id="kdw-CO-LGZ">
+                        <color key="badgeColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akf-k2-Yh2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="338" y="1274"/>
         </scene>
-        <!--Item 1-->
+        <!--Star-->
         <scene sceneID="zYR-Ic-ddk">
             <objects>
                 <viewController id="cwF-ej-Sav" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="snO-eU-Cbk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyx-pZ-xQG">
+                                <rect key="frame" x="172" y="778" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="HV9-F9-1ru"/>
+                                    <constraint firstAttribute="width" constant="70" id="INU-V0-8zE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="plus.circle" catalog="system">
+                                    <color key="titleShadowColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hl4-za-hm8" firstAttribute="bottom" secondItem="iyx-pZ-xQG" secondAttribute="bottom" constant="-35" id="9fx-M9-ApX"/>
+                            <constraint firstItem="iyx-pZ-xQG" firstAttribute="centerX" secondItem="snO-eU-Cbk" secondAttribute="centerX" id="xGf-1G-KuG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hl4-za-hm8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="q0i-7k-sQm"/>
+                    <tabBarItem key="tabBarItem" title="Star" image="star.circle.fill" catalog="system" selectedImage="star.circle.fill" id="q0i-7k-sQm">
+                        <color key="badgeColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3NY-Hd-9Gt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,6 +100,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="cwF-ej-Sav" kind="relationship" relationship="viewControllers" id="qaG-rv-MWh"/>
@@ -58,4 +112,9 @@
             <point key="canvasLocation" x="-570" y="952"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="star.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
