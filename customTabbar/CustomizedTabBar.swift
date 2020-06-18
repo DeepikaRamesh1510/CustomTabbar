@@ -19,6 +19,17 @@ class CustomizedTabBar: UITabBar {
     private func addShape() {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
+        shapeLayer.strokeColor = UIColor.lightGray.cgColor
+        shapeLayer.fillColor = UIColor.white.cgColor
+        shapeLayer.lineWidth = 1
+        
+        if let oldShapeLayer = self.shapeLayer {
+            self.layer.replaceSublayer(oldShapeLayer, with: shapeLayer)
+        } else {
+            self.layer.insertSublayer(shapeLayer, at: 0)
+        }
+        
+        self.shapeLayer = shapeLayer
     }
     
     private func createPath() -> CGPath {
